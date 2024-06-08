@@ -43,6 +43,26 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <link rel="stylesheet" href="./index.css" />
+    <style>
+      #container {
+        position: relative;
+        width: 351px;
+        height: 618px;
+      }
+  
+      .path-div {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+  
+      .circle {
+        width: 90px;
+        height: 90px;
+        background-color: #fff;
+      
+        border-radius: 50%;
+      }
+    </style>
   </head>
   <body
     class="w-screen h-auto relative normalfont flex flex-col overflow-x-hidden bg-[#F9F3E4]"
@@ -187,6 +207,7 @@
             </div>
           </div>
         </div>
+       
         <!-- image container of bride and groom -->
         <div class="col-span-2 sm:col-span-1 flex flex-col">
           <div
@@ -197,6 +218,59 @@
         </div>
       </div>
     </div>
+     <!-- Our story section -->
+     <div class="w-full bg-[#A16772] py-[30px] lg:py-[60px] relative">
+      <div class="absolute w-[200px] lg:w-[300px] -top-[200px] -left-[100px]">
+        <img src="./assets/images/ourstorydecor.png" alt="">
+      </div>
+      <div class="absolute w-[200px] lg:w-[300px] -bottom-[200px] -right-[100px] ">
+        <img src="./assets/images/ourstorydecor.png" alt="">
+      </div>
+        <div class="w-[400px] sm:pb-[50px] lg:pb-[100px] flex flex-col justify-center items-center mx-auto">
+          <div class="w-full flex justify-center items-center text-[#EDD6C1] text-[30pt] pb-[40px] lg:pb-[80px]">
+            Our story
+          </div >
+          <div id="container" class="scale-[50%] sm:scale-[90%] lg:scale-100">
+            <svg width="351" height="618" viewBox="0 0 351 618" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="svg-path" d="M1.25766 1C-2.57567 77.1667 34.8577 234.8 215.258 256C396 256 413.3 397.7 148.5 616.5" stroke="#EDD6C1" stroke-width="2"/>
+            </svg>
+            <div class="path-div" data-index="0" data-percentage="1">
+              <div class="circle relative overflow-hidden px-1 py-1 bg-[#EDD6C1]">
+                <div class="w-full h-full bg-[#EDD6C1] rounded-full overflow-hidden">
+                  <img src="./assets/images/hero1.png" class="object-cover w-full " alt="">
+                </div>
+              </div>
+              <div class="absolute flex flex-col gap-1 left-[100px] top-[50%] -translate-y-[50%] w-[340px] px-3 py-2  rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] text-[#EDD6C1] backdrop-blur-[6px]">
+                <div class="w-full text-2xl text-center">How we met...</div>
+                <p class="w-full px-1 text-sm text-center font-light"> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+              </div>
+            </div>
+            <div class="path-div" data-index="1" data-percentage="40">
+              <div class="circle relative overflow-hidden px-1 py-1 bg-[#EDD6C1]">
+                <div class="w-full h-full bg-[#EDD6C1] rounded-full overflow-hidden">
+                  <img src="./assets/images/hero1.png" class="object-cover w-full " alt="">
+                </div>
+              </div>
+              <div class="absolute flex flex-col gap-1 right-[100px] top-[50%] -translate-y-[50%] w-[340px] px-3 py-2  rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] text-[#EDD6C1] backdrop-blur-[6px]">
+                <div class="w-full text-2xl text-center">little love....</div>
+                <p class="w-full px-1 text-sm text-center font-light"> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+              </div>
+            </div>
+            <div class="path-div" data-index="2" data-percentage="100">
+              <div class="circle relative overflow-hidden px-1 py-1 bg-[#EDD6C1]">
+                <div class="w-full h-full bg-[#EDD6C1] rounded-full overflow-hidden">
+                  <img src="./assets/images/hero1.png" class="object-cover w-full " alt="">
+                </div>
+              </div>
+              <div class="absolute flex flex-col gap-1 left-[100px] top-[50%] -translate-y-[50%] w-[340px] px-3 py-2  rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] text-[#EDD6C1] backdrop-blur-[6px]">
+                <div class="w-full text-2xl text-center">We are engaged...</div>
+                <p class="w-full px-1 text-sm text-center font-light"> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+              </div>
+            </div>
+        </div>
+     </div>
+     </div></div>
+     <!-- Our story ends here -->
     <!-- here starts the event section -->
     <div class="w-full bg-[#EDD6C1]  flex justify-center items-center">
       <div class="w-full flex flex-col py-[50px] px-2 max-w-6xl mx-auto">
@@ -387,7 +461,7 @@
             >
               simply dummy text of the printing and typesetting industry. Lorem
               Ipsum has been the industry's standard dummy text ever since the
-              1500s, w
+              1500s
             </p>
             <button
               class="w-[100px] py-1 bg-[#EDD6C1] text-[#A16772] rounded-r-full rounded-l-full text-sm mt-[30px] hover:bg-[#FDDEC1] ease-in-out duration-300"
@@ -464,5 +538,26 @@
 
       requestAnimationFrame(raf);
     });
+  </script>
+   <script>
+    function getPathPosition(path, percentage) {
+      const length = path.getTotalLength();
+      return path.getPointAtLength(length * percentage);
+    }
+
+    function placeDivs() {
+      const path = document.getElementById('svg-path');
+      const divs = document.querySelectorAll('.path-div');
+
+      divs.forEach(div => {
+        const percentage = div.dataset.percentage / 100;
+        const { x, y } = getPathPosition(path, percentage);
+
+        div.style.left = `${x}px`;
+        div.style.top = `${y}px`;
+      });
+    }
+
+    window.onload = placeDivs;
   </script>
 </html>
