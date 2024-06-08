@@ -22,6 +22,26 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <style>
+      #container {
+        position: relative;
+        width: 351px;
+        height: 618px;
+      }
+  
+      .path-div {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+  
+      .circle {
+        width: 90px;
+        height: 90px;
+        background-color: #fff;
+      
+        border-radius: 50%;
+      }
+    </style>
   </head>
   <body class="w-screen h-auto relative normalfont flex flex-col overflow-x-hidden">
     <nav
@@ -187,7 +207,7 @@
       </div>
     </div>
     <div class="w-full h-[300px] relative normalfont">
-      <div class="absolute bottom-0 w-[180px] sm:w-[210px] lg:w-[330px]  translate-y-[50%] right-0 rotate-">
+      <div class="absolute bottom-0 w-[180px] sm:w-[210px] lg:w-[330px]  translate-y-[50%] right-0 z-20">
         <img src="./assets/images/mirrrordecor.svg" alt="" />
       </div>
       <div class="w-full h-full flex flex-col gap-5 justify-center items-center"> 
@@ -195,6 +215,54 @@
         <button class="px-5 py-2 bg-[#C8E6B5] rounded-r-full rounded-l-full text-[#587446] font-light text-sm hover:bg-[#A8DD87] ease-in-out duration-300">I'm attending</button>
       </div>
     </div>
+    <!-- Our story section -->
+    <div class="w-full bg-[#933E63] py-[30px] lg:py-[60px] relative z-0">
+     
+        <div class="w-[400px] sm:pb-[50px] lg:pb-[100px] flex flex-col justify-center items-center mx-auto">
+          <div class="w-full flex justify-center items-center text-[#FCF5FA] text-[30pt] pb-[40px] lg:pb-[80px]">
+            Our story
+          </div >
+          <div id="container" class="scale-[50%] sm:scale-[90%] lg:scale-100">
+            <svg width="351" height="618" viewBox="0 0 351 618" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="svg-path" d="M1.25766 1C-2.57567 77.1667 34.8577 234.8 215.258 256C396 256 413.3 397.7 148.5 616.5" stroke="#FCF5FA" stroke-width="2"/>
+            </svg>
+            <div class="path-div" data-index="0" data-percentage="1">
+              <div class="circle relative overflow-hidden px-1 py-1 bg-[#FCF5FA]">
+                <div class="w-full h-full bg-[#FCF5FA] rounded-full overflow-hidden">
+                  <img src="./assets/images/Bridegroom.png" class="object-cover w-full " alt="">
+                </div>
+              </div>
+              <div class="absolute flex flex-col gap-1 left-[100px] top-[50%] -translate-y-[50%] w-[340px] px-3 py-2  rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] text-[#FCF5FA] backdrop-blur-[6px]">
+                <div class="w-full text-2xl text-center">How we met...</div>
+                <p class="w-full px-1 text-sm text-center font-light"> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+              </div>
+            </div>
+            <div class="path-div" data-index="1" data-percentage="40">
+              <div class="circle relative overflow-hidden px-1 py-1 bg-[#FCF5FA]">
+                <div class="w-full h-full bg-[#FCF5FA] rounded-full overflow-hidden">
+                  <img src="./assets/images/Bridegroom.png" class="object-cover w-full " alt="">
+                </div>
+              </div>
+              <div class="absolute flex flex-col gap-1 right-[100px] top-[50%] -translate-y-[50%] w-[340px] px-3 py-2  rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] text-[#FCF5FA] backdrop-blur-[6px]">
+                <div class="w-full text-2xl text-center">little love....</div>
+                <p class="w-full px-1 text-sm text-center font-light"> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+              </div>
+            </div>
+            <div class="path-div" data-index="2" data-percentage="100">
+              <div class="circle relative overflow-hidden px-1 py-1 bg-[#FCF5FA]">
+                <div class="w-full h-full bg-[#FCF5FA] rounded-full overflow-hidden">
+                  <img src="./assets/images/Bridegroom.png" class="object-cover w-full " alt="">
+                </div>
+              </div>
+              <div class="absolute flex flex-col gap-1 left-[100px] top-[50%] -translate-y-[50%] w-[340px] px-3 py-2  rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] text-[#FCF5FA] backdrop-blur-[6px]">
+                <div class="w-full text-2xl text-center">We are engaged...</div>
+                <p class="w-full px-1 text-sm text-center font-light"> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+              </div>
+            </div>
+        </div>
+     </div>
+     </div></div>
+     <!-- Our story ends here -->
     <div class="w-full flex flex-col">
       <div class=" h-[300px] bg-[#C8E6B5] grid grid-cols-2 justify-start items-center lg:px-[100px] py-[50px] lg:py-[100px] ">
         <div class="normalfont col-span-2 lg:col-span-1 flex flex-col items-center lg:justify-end lg:items-end pl-3 lg:pr-auto ">
@@ -287,6 +355,27 @@
 
     </div>
   </body>
+  <script>
+    function getPathPosition(path, percentage) {
+      const length = path.getTotalLength();
+      return path.getPointAtLength(length * percentage);
+    }
+
+    function placeDivs() {
+      const path = document.getElementById('svg-path');
+      const divs = document.querySelectorAll('.path-div');
+
+      divs.forEach(div => {
+        const percentage = div.dataset.percentage / 100;
+        const { x, y } = getPathPosition(path, percentage);
+
+        div.style.left = `${x}px`;
+        div.style.top = `${y}px`;
+      });
+    }
+
+    window.onload = placeDivs;
+  </script>
   <script>
   document.addEventListener('DOMContentLoaded', () => {
     const lenis = new Lenis()
