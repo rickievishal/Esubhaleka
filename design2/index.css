@@ -10,3 +10,92 @@ body{
 .normalfont{
     font-family: "Public Sans", sans-serif;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 100%; /* Ensure ul takes the full height */
+  }
+  
+ul  li {
+    padding: 0;
+    flex: 1; /* Default flex value to make all items fit in the container */
+    transition: flex 0.2s ease;
+  }
+  
+a  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease;
+  }
+  
+  ul:is(:hover, :focus-within) img {
+    opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+    filter: grayscale(calc(1 - var(--active-lerp, 0)));
+  }
+  
+  :root {
+    --lerp-0: 1;
+    --lerp-1: 0.7;
+    --lerp-2: 0.5;
+    --lerp-3: 0.3;
+    --lerp-4: 0.1;
+    --lerp-5: 0.05;
+    --lerp-6: 0.01;
+  }
+  
+  a {
+    outline-offset: 4px;
+  }
+  
+  li:is(:hover, :focus-within) {
+    --active-lerp: var(--lerp-0);
+    flex: 3; /* Increase flex value on hover */
+    z-index: 7;
+  }
+  li:has( + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li {
+    --active-lerp: var(--lerp-1);
+    flex: 2; /* Adjust flex value */
+    z-index: 6;
+  }
+  li:has( + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li {
+    --active-lerp: var(--lerp-2);
+    flex: 1.5; /* Adjust flex value */
+    z-index: 5;
+  }
+  li:has( + li + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li + li {
+    --active-lerp: var(--lerp-3);
+    flex: 1.2; /* Adjust flex value */
+    z-index: 4;
+  }
+  li:has( + li + li + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li + li + li {
+    --active-lerp: var(--lerp-4);
+    flex: 1; /* Adjust flex value */
+    z-index: 3;
+  }
+  li:has( + li + li + li + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li + li + li + li {
+    --active-lerp: var(--lerp-5);
+    flex: 0.8; /* Adjust flex value */
+    z-index: 2;
+  }
+  li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
+  li:is(:hover, :focus-within) + li + li + li + li + li + li {
+    --active-lerp: var(--lerp-6);
+    flex: 0.5; /* Adjust flex value */
+    z-index: 1;
+  }
+  
