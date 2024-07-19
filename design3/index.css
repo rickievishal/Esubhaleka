@@ -1,9 +1,10 @@
 html{
     background-color: #F9F3E4;
-
+    width: 100vw;
 }
 body{
     font-family: "League Spartan", sans-serif;
+    height: 100vh;
 }
 .home-demo .item {
     background: #ff3f4d;
@@ -15,4 +16,7 @@ body{
     margin: 0;
     font-style: italic;
     font-weight: 300;
+}
+.owl-nav{
+    display: none;
 }

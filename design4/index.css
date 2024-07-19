@@ -1,0 +1,12 @@
+body{
+    display: inline;
+    width: 100vh;
+    color: #FAEFE1;
+}
+
+.secondary_font{
+    font-family: "Montserrat", sans-serif;
+}
+.primary_font{
+    font-family: "Italiana", sans-serif;
+}
