@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kavya&rohan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- cdn of owlcarousel -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <style>
+      .owl-nav .owl-prev,
+      .owl-nav .owl-next {
+      }
+
+      .owl-nav .owl-prev {
+        display: hidden;
+      }
+      .owl-nav .owl-prev span,
+      .owl-nav .owl-next span {
+        display: hidden;
+        border-radius: 100%;
+        color: black;
+      }
+
+      .owl-nav .owl-next {
+        display: hidden;
+        background-color: black;
+        right: 10px;
+      }
+
+      .owl-dots {
+        display: hidden;
+      }
+
+      .owl-dots .owl-dot {
+        display: hidden;
+      }
+
+      .owl-dots .owl-dot span {
+        display: hidden;
+      }
+    </style>
+    <style>
+      #container {
+        position: relative;
+        width: 351px;
+        height: 618px;
+      }
+
+      .path-div {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body class="w-screen bg-[#F7F2EA] h-auto text-[#FFFFFF]">
+    <div class="w-full h-full">
+      <div
+        class="w-full h-screen relative flex justify-center items-center overflow-hidden"
+      >
+        <div
+          class="absolute top-[400px] left-0 w-[160px] lg:w-[250px] overflow-hidden"
+        >
+          <img class="w-full" src="./assets/images/decor_left.png" alt="" />
+        </div>
+        <div
+          class="absolute top-[100px] right-0 w-[160px] lg:w-[250px] overflow-hidden"
+        >
+          <img class="w-full" src="./assets/images/decor_right.png" alt="" />
+        </div>
+        <div
+          class="w-[70%] max-w-[300px] lg:max-w-xl relative flex flex-col gap-[80px] mb-[100px]"
+        >
+          <div
+            class="absolute top-[50%] right-[50%] lg:right-[55%] translate-x-[50%] -translate-y-[50%] w-[250px] lg:w-[450px] overflow-hidden"
+          >
+            <img class="w-full" src="./assets/images/decor_middle.png" alt="" />
+          </div>
+          <div class="w-full text-left text-5xl sm:text-6xl lg:text-7xl text-[#DA2E78]">
+            <p>Kavya</p>
+          </div>
+          <div class="w-full text-right text-5xl sm:text-6xl lg:text-7xl text-[#DA2E78]">
+            <p>&Rohan</p>
+          </div>
+        </div>
+        <div
+          class="w-full absolute bottom-[50px] left-0 flex flex-col justify-center items-center"
+        >
+          <div class="w-full flex justify-center items-center gap-2">
+            <div
+              class="w-[55px] h-[55px] flex flex-col justify-center items-center rounded-xl text-[#DA2E78] bg-[#FFFFFF] border-[1px] border-[#FFFFFF] backdrop-blur-sm"
+            >
+              <p class="text-xl leading-tight">23</p>
+              <p class="text-xs">Days</p>
+            </div>
+            <div
+              class="w-[65px] h-[65px] flex flex-col justify-center items-center rounded-xl text-[#FBF9F5] bg-[#DA2E78] border-[1px] border-[#FFFFFF]"
+            >
+              <p class="text-2xl leading-tight">23</p>
+              <p class="text-sm">Days</p>
+            </div>
+            <div
+              class="w-[55px] h-[55px] flex flex-col justify-center items-center rounded-xl text-[#DA2E78] bg-[#FFFFFF] border-[1px] border-[#FFFFFF] backdrop-blur-sm"
+            >
+              <p class="text-xl leading-tight">23</p>
+              <p class="text-xs">Days</p>
+            </div>
+          </div>
+          <div class="w-full px-3 flex justify-center items-center gap-5 py-3">
+            <p class="text-xs text-[#392632]">Bride&Groom</p>
+            <p class="text-xs text-[#392632]">Events</p>
+            <p class="text-xs text-[#392632]">Our story</p>
+            <p class="text-xs text-[#392632]">Gallery</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full relative">
+        <div class="absolute -top-[18px] right-[50%] translate-x-[50%] z-20">
+          <button
+            class="h-[36px] w-[130px] rounded-l-full rounded-r-full border-[3px] text-[#DA2E78] border-[#DA2E78] bg-[#FFFFFF]"
+          >
+            Save the date
+          </button>
+        </div>
+        <div
+          class="w-full h-[500px] sm:h-[600px] relative flex justify-center items-center bg-[#DA2E78] overflow-hidden"
+        >
+          <div
+            class="w-full text-[#FFFFFF] flex flex-col justify-center items-center"
+          >
+            <p class="text-[#FFFFFF] text-5xl sm:text-6xl ">October 18</p>
+            <p>we are getting married.</p>
+          </div>
+          <div
+            class="w-[800px] sm:w-[1200px] lg:w-full h-[400px] absolute -bottom-[80px] sm:bottom-0 lg:-bottom-[60px] right-0"
+          >
+            <img
+              class="w-full translate-y-[10%] lg:-translate-y-[20%]"
+              src="./assets/images/Vector 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-full pb-[50px] bg-[#FFFFFF]">
+        <div class="w-full text-[#FF86BA] flex justify-center items-center">
+          <p class="text-4xl">Bride & Groom</p>
+        </div>
+        <div
+          class="w-full flex flex-col sm:flex-row lg:flex-row justify-center items-center"
+        >
+          <!-- about bride component -->
+          <div class="flex flex-col justify-center items-start mt-5 px-4 lg:py-5">
+            <div class="w-full flex justify-center items-center">
+              <div
+                class="w-[200px] h-[200px] bg-black rounded-full shadow-xl overflow-hidden border-[2px] border-[#FFFFFF]"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/images/Bride.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="max-w-[270px] flex flex-col justify-start items-center mt-3"
+            >
+              <p class="text-sm text-[#DA2E78] text-left text-xl w-full">
+                Kavya Reddy
+              </p>
+              <p class="text-xs text-[#6B6B6B]">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a
+              </p>
+            </div>
+          </div>
+          <!-- about bride component -->
+          <!-- about groom component -->
+          <div class="flex flex-col justify-center items-start mt-5 px-4 lg:py-5">
+            <div class="w-full flex justify-center items-center">
+              <div
+                class="w-[200px] h-[200px] bg-black rounded-full shadow-xl overflow-hidden border-[2px] border-[#FFFFFF]"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/images/Groom.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="max-w-[270px] flex flex-col justify-start items-center mt-3"
+            >
+              <p class="text-sm text-[#DA2E78] text-right text-xl w-full">
+                Rohan Singh
+              </p>
+              <p class="text-xs text-[#6B6B6B] text-right">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a
+              </p>
+            </div>
+          </div>
+          <!-- about groom component -->
+        </div>
+      </div>
+      <div class="w-full flex flex-col bg-[#0A0A0A]">
+        <div class="w-full py-2 flex justify-center items-center bg-[#832E52]">
+          <p class="text-xl">Gallery</p>
+        </div>
+        <div class="w-full flex flex-col justify-center lg:items-center">
+          <div class="flex justify-center items-center lg:max-w-7xl py-7 px-3">
+            <p class="text-[#FFFFFF] sm:max-w-xl lg:max-w-3xl text-center text-3xl sm:text-4xl lg:text-5xl">Moments of Forever: Our Wedding Journey</p>
+          </div>
+          <div class="max-w-7xl relative py-5">
+            <div
+              class="absolute top-[30px] right-[50%] translate-x-[50%] z-20"
+            >
+              <button
+                class="rounded-r-full bg-[#D9D9D9] border-[1px] text-[#000000] border-[#A0A0A0] px-4 h-[30px] rounded-l-full active:bg-[#c9c9c9] duration-300 ease-in-out outline-none focus:outline-none "
+              >
+                Explore
+              </button>
+            </div>
+            <div
+              class="absolute top-[50%] -translate-y-[50%] left-[10px] z-20 bg-[rgb(0,0,0,0.6)] backdrop-blur-sm border-[rgb(250,250,250,0.3)] border-[1px] prev w-[40px] h-[40px] rounded-full flex justify-center items-center hover:cursor-pointer"
+            >
+              <i class="bx bx-left-arrow-alt text-2xl"></i>
+            </div>
+            <div
+              class="absolute top-[50%] -translate-y-[50%] right-[10px] z-20 bg-[rgb(0,0,0,0.6)] backdrop-blur-sm border-[rgb(250,250,250,0.3)] border-[1px] next w-[40px] h-[40px] rounded-full flex justify-center items-center hover:cursor-pointer"
+            >
+              <i class="bx bx-right-arrow-alt text-2xl"></i>
+            </div>
+            <div
+              class="owl-carousel w-full h-[450px] lg:h-[650px] flex justify-center items-center overflow-hidden"
+            >
+              <div class="w-full h-full">
+                <img class="w-full" src="./assets/images/pic1.png" alt="" />
+              </div>
+              <div class="w-full h-full">
+                <img class="w-full" src="./assets/images/pic1.png" alt="" />
+              </div>
+              <div class="w-full h-full">
+                <img class="w-full" src="./assets/images/pic1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-[#FF006E]">
+        <div class="max-w-6xl mx-auto py-[180px] relative overflow-hidden">
+          <p class="absolute text-7xl top-0 left-0 rotate-[20deg] blur-[3px]">
+            Kavya
+          </p>
+          <p
+            class="absolute text-7xl lg:text-[50pt] bottom-0 right-0 -rotate-[25deg] blur-[3px]"
+          >
+            Rohan
+          </p>
+          <p
+            class="absolute hidden lg:block scale-[80%] text-7xl bottom-[20%] left-0 -rotate-[10deg] blur-[6px]"
+          >
+            Kavya
+          </p>
+          <p
+            class="absolute hidden lg:block scale-[80%] text-7xl top-[20%] right-0 -rotate-[10deg] blur-[6px]"
+          >
+            Rohan
+          </p>
+
+          <div class="flex flex-col justify-center items-center bg-[#FF006E]">
+            <p class="text-3xl">Are you attending??</p>
+            <button
+              class="px-3 h-[30px] bg-[#FFFFFF] text-[#FF006E] text-sm rounded-l-full rounded-r-full mt-3 active:bg-[#f2f2f2] duration-300 ease-in-out outline-none focus:outline-none hover:scale-105"
+            >
+              I am attending
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full py-[30px] bg-[#2F0014] ">
+        <!-- Our story section -->
+        <div
+          class="w-full primary_font h-[800px] sm:h-[1000px] py-[30px] text-[#FFFFFF] lg:py-[60px] relative overflow-hidden"
+        >
+          <div
+            class="sm:pb-[50px] lg:pb-[100px] flex flex-col justify-center items-center"
+          >
+            <div
+              class="w-full flex justify-center items-center text-[#FFFFFF] text-[30pt] sm:pb-[80px]"
+            >
+              Our story
+            </div>
+
+            <div id="container" class="scale-[80%] sm:scale-100">
+              <svg
+                width="351"
+                height="646"
+                viewBox="0 0 351 646"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="svg-path"
+                  d="M1 0.5V845.5"
+                  stroke="#FAEFE1"
+                  stroke-width="2"
+                />
+              </svg>
+
+              <div class="path-div" data-index="0" data-percentage="1">
+                <div
+                  class="h-[70px] w-[70px] rounded-full sm:h-[90px] sm:w-[90px] relative overflow-hidden px-1 py-1 bg-[#FAEFE1]"
+                >
+                  <div
+                    class="w-full h-full bg-[#FAEFE1] rounded-full overflow-hidden"
+                  >
+                    <img
+                      src="./assets/images/BrideAndGroom.png"
+                      class="object-cover w-full"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="absolute flex flex-col gap-1 left-[100px] top-[50%] -translate-y-[50%] min-w-[280px] max-w-[340px] px-3 py-2 rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] backdrop-blur-[6px]"
+                >
+                  <div class="w-full text-2xl text-center">How we met...</div>
+                  <p class="w-full px-1 text-sm text-center font-light">
+                     since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but
+                  </p>
+                </div>
+              </div>
+              <div class="path-div" data-index="1" data-percentage="40">
+                <div
+                  class="h-[70px] w-[70px] rounded-full sm:h-[90px] sm:w-[90px] relative overflow-hidden px-1 py-1 bg-[#FAEFE1]"
+                >
+                  <div
+                    class="w-full h-full bg-[#FAEFE1] rounded-full overflow-hidden"
+                  >
+                    <img
+                      src="./assets/images/BrideAndGroom.png"
+                      class="object-cover w-full"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="absolute flex flex-col gap-1 left-[100px] top-[50%] -translate-y-[50%] min-w-[280px] max-w-[340px] px-3 py-2 rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] backdrop-blur-[6px]"
+                >
+                  <div class="w-full text-2xl text-center">little love....</div>
+                  <p class="w-full px-1 text-sm text-center font-light">
+                     since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the since the
+                    1500s, when an unknown printer took a galley of type and
+                    scrambled
+                  </p>
+                </div>
+              </div>
+              <div class="path-div" data-index="2" data-percentage="80">
+                <div
+                  class="h-[70px] w-[70px] rounded-full sm:h-[90px] sm:w-[90px] relative overflow-hidden px-1 py-1 bg-[#FAEFE1]"
+                >
+                  <div
+                    class="w-full h-full bg-[#FAEFE1] rounded-full overflow-hidden"
+                  >
+                    <img
+                      src="./assets/images/BrideAndGroom.png"
+                      class="object-cover w-full"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="absolute flex flex-col gap-1 left-[100px] top-[50%] -translate-y-[50%] min-w-[280px] max-w-[340px] px-3 py-2 rounded-lg bg-[rgb(243,243,243,0.27)] border-[rgb(243,243,243,0.27)] border-[1px] backdrop-blur-[6px]"
+                >
+                  <div class="w-full text-2xl text-center">
+                    We are engaged...
+                  </div>
+                  <p class="w-full px-1 text-sm text-center font-light">
+                     since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the since the
+                    1500s, when an unknown printer took a galley of type and
+                    scrambled
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Our story ends here -->
+      </div>
+      <div class="w-full py-[50px] bg-black flex flex-col">
+        <div
+          class="w-full px-3 flex flex-col lg:flex-row sm:max-w-xl lg:max-w-4xl mx-auto"
+        >
+          <div class="w-full flex-col">
+            <p class="text-7xl">Events.</p>
+            <div class="flex flex-wrap mt-2 gap-y-1 gap-x-2">
+              <div
+                class="px-3 py-1 border rounded-l-full rounded-r-full text-xs"
+              >
+                Mehandi
+              </div>
+              <div
+                class="px-3 py-1 border rounded-l-full rounded-r-full text-xs"
+              >
+                Haldi
+              </div>
+              <div
+                class="px-3 py-1 border rounded-l-full rounded-r-full text-xs"
+              >
+                Reception
+              </div>
+              <div
+                class="px-3 py-1 border rounded-l-full rounded-r-full text-xs"
+              >
+                Mehandi
+              </div>
+              <div
+                class="px-3 py-1 border rounded-l-full rounded-r-full text-xs"
+              >
+                Mehandi
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex-row hidden lg:flex">
+            <i
+              class="bx bx-right-arrow-alt text-[150pt] leading-tight rotate-45 -translate-y-[25%] text-[#AAAAAA]"
+            ></i>
+            <p class="max-w-[200px] text-xs text-[#DCDCDC] font-light">
+              It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum
+            </p>
+          </div>
+        </div>
+        <div class="w-full flex justify-center items-center">
+          <div class="w-full max-w-7xl flex flex-col mt-5 gap-3">
+            <div class="w-full h-[280px] relative">
+              <div
+                class="absolute top-0 right-0 w-full h-full bg-[rgb(31,31,31,0.4)] z-10"
+              ></div>
+              <div
+                class="absolute top-[50%] right-[50%] translate-x-[50%] -translate-y-[50%] w-full flex items-center justify-center z-20"
+              >
+                <p class="text-5xl">Reception.</p>
+              </div>
+              <div class="w-full h-full overflow-hidden saturate-50">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/images/event1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="w-full h-[280px] relative">
+              <div
+                class="absolute top-0 right-0 w-full h-full bg-[rgb(31,31,31,0.4)] z-10"
+              ></div>
+              <div
+                class="absolute top-[50%] right-[50%] translate-x-[50%] -translate-y-[50%] w-full flex items-center justify-center z-20"
+              >
+                <p class="text-5xl">Haldi.</p>
+              </div>
+              <div class="w-full h-full overflow-hidden saturate-50">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/images/event2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="w-full h-[280px] relative">
+              <div
+                class="absolute top-0 right-0 w-full h-full bg-[rgb(31,31,31,0.4)] z-10"
+              ></div>
+              <div
+                class="absolute top-[50%] right-[50%] translate-x-[50%] -translate-y-[50%] w-full flex items-center justify-center z-20"
+              >
+                <p class="text-5xl">Mehandi.</p>
+              </div>
+              <div class="w-full h-full overflow-hidden saturate-50">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/images/event3.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full flex flex-col justify-center items-center py-[50px] lg:py-[100px] bg-black px-3"
+      >
+        <p class="w-full text-center text-4xl lg:text-5xl">Accomadation</p>
+        <p
+          class="w-full max-w-3xl text-center font-light text-xs lg:text-sm mt-3"
+        >
+          It was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </p>
+      </div>
+      <div
+        class="w-full flex flex-col justify-center items-center py-[50px] lg:py-[100px] bg-black px-3"
+      >
+        <p class="w-full text-center text-4xl lg:text-5xl">Travel</p>
+        <p
+          class="w-full max-w-3xl text-center font-light text-xs lg:text-sm mt-3"
+        >
+          It was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </p>
+      </div>
+      <div class="w-full flex flex-col bg-black">
+        <div class="max-w-6xl mx-auto py-[50px] lg:py-[100px]">
+          <div class="w-full flex flex-col sm:flex-row gap-3">
+            <div class="w-full flex flex-col">
+              <p class="text-5xl">Venue</p>
+              <div
+                class="h-[300px] w-[290px] sm:w-[400px] lg:w-[550px] mt-2 relative overflow-hidden"
+              >
+                <i
+                  class="bx bx-right-arrow-alt absolute -right-[20px] text-[100pt] leading-tight -rotate-45 -translate-y-[25%] text-[#FFFFFF]"
+                ></i>
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/images/venue.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p
+              class="w-full max-w-[300px] mt-2 sm:pt-[50px] text-left font-light text-xs"
+            >
+              It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with
+              desktop publishing software like Aldus
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full flex justify-center items-center py-[60px] sm:py-[100px]"
+      >
+        <div class="flex flex-col justify-center items-center">
+          <p class="text-[#000000] text-4xl sm:text-5xl lg:text-7xl">We are excited!!</p>
+          <p class="text-[#777777] max-w-[320px] lg:max-w-[400px] leading-tight text-center text-xs mt-3" >
+            It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages
+          </p>
+         <button class="bg-[#000000] px-4 py-2 rounded-r-full rounded-l-full  mt-2"  >
+            <p class="text-xs">Back to Top</p>
+         </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+        },
+        600: {
+          items: 2,
+          nav: false,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+        },
+        1000: {
+          items: 2,
+          nav: true,
+          loop: false,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+        },
+      },
+    });
+    var owl = $(".owl-carousel");
+    owl.on("mousewheel", ".owl-stage", function (e) {
+      if (e.deltaY > 0) {
+        owl.trigger("next.owl");
+      } else {
+        owl.trigger("prev.owl");
+      }
+      e.preventDefault();
+    });
+    $(".prev").click(function () {
+      owl.trigger("prev.owl");
+    });
+    // Go to the previous item
+    $(".next").click(function () {
+      owl.trigger("next.owl");
+    });
+  </script>
+  <!-- jquery cdn -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lenis = new Lenis();
+
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    });
+  </script>
+  <script>
+    function getPathPosition(path, percentage) {
+      const length = path.getTotalLength();
+      return path.getPointAtLength(length * percentage);
+    }
+
+    function placeDivs() {
+      const path = document.getElementById("svg-path");
+      const divs = document.querySelectorAll(".path-div");
+
+      divs.forEach((div) => {
+        const percentage = div.dataset.percentage / 100;
+        const { x, y } = getPathPosition(path, percentage);
+
+        div.style.left = `${x}px`;
+        div.style.top = `${y}px`;
+      });
+    }
+
+    window.onload = placeDivs;
+  </script>
+</html>
